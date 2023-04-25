@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* z-index is used for image visibility according to the given order.The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order. */
+.navbar{
+   background: rgb(39, 36, 38);
+   padding: 1rem 8rem;
+   z-index: 100;
+
+}
+.navbar-brand{
+   font-size: 1.4rem ;
+   font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color:rgb(247, 250, 252);
+    font-size: 1rem;
+    padding:0rem 0.8rem;
+
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active {
+   
+   color: green;
+   box-shadow: 0 0 10px;
+
+}
+#navbarSupportedContent > button{
+    border-radius: 25px;
+
+}
+/* overflow is used to hide the scroll bar */
+.vid{
+    overflow:hidden;
+     width:100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+    
+
+}
+.vid video{
+   width: 100%;
+   height: 100%;
+   pointer-events: none;
+   object-fit: cover;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 100;
+}
+.hero{
+    position:relative;
+
+}
+body > div.vid > div > h2
+{
+    font-weight:700;
+}
+.vid .hero p{
+    width:55%;
+    letter-spacing: 0.2px;
+    padding-bottom: 1rem;
+}
+.vid .hero a{
+  
+    background-color: rgb(78, 221, 152) ;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+.vid .hero a:hover{
+    background-color: rgb(94, 91, 91);
+}
+.about{
+    /* padding: 12px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(0, 0, 0);
+    overflow:hidden ;
+    z-index:-1;
+}
+.about .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ 
+    
+}
+.about .text h2{
+    color:rgb(30, 170, 123);
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing:3px ;
+    
+
+}
+.about .text h5{
+    color:rgb(115, 145, 135);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing:2px;
+
+}
+.about .text p{
+    color:rgb(115, 145, 135);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing:1px;
+}
+.about .text a{
+    background-color: rgb(78, 221, 152) ;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+.about .text a:hover{
+    background-color: rgb(65, 68, 67);
+}
+.discover{
+    background-color: rgb(255, 255, 255);
+}
+.discover .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+ 
+    
+}
+.discover .text h2{
+    color:rgb(78, 221, 152);
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    
+
+}
+.discover .text h5{
+    color: rgb(68, 63, 63);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing:2px;
+
+}
+.discover .text p{
+    color:rgb(101, 105, 104);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing:1px;
+}
+.discover .text a{
+    background-color: rgb(14, 14, 14) ;
+    font-weight: 300;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color:rgb(255, 255, 255) 
+}
+.discover .text a:hover{
+    background-color: rgb(65, 68, 67);
+}
+.Service{
+    background-color:rgb(0, 0, 0);
+}
+.Service .one{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+}
+.colab .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    
+}
+.colab .text h2{
+    padding-bottom: 0.8rem;
+    color:rgb(30, 170, 123);
+    font-weight: 800;
+    font-size: 1.4rem;
+    letter-spacing:3px ;
+    
+
+}
+/* .colab .text  h5{
+    color:rgb(99, 109, 105);
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing:2px;
+
+} */
+.colab .text p{
+    color:rgb(65, 73, 70);
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing:1px;
+}
+.colab .text a{
+    background-color: rgb(78, 221, 152) ;
+    font-weight: 600;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+.colab .text a:hover{
+    background-color: rgb(65, 68, 67);
+}
+
+/* @media is used to apply different style when the display is in mentioned size like different devices */
+@media screen and (max-width:988px){
+#navbarSupportedContent > ul{
+    padding: 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    
+    padding:0.8rem 0rem;
+
+} 
+ .vid .hero h2{
+   
+    font-size: 2.5rem;
+  
+}
+.vid .hero p{
+font-size: 1rem;
+}
+.vid .hero a{
+  
+    font-size: 0.9rem;
+
+} 
+}
+.vid::before{
+    content: '';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to top,rgb(0, 0, 0),transparent);
+    z-index: 101;
+}
+#show{
+    z-index: 1000;
+}
+.bulb{
+    position:relative;
+    left:700px;
+    bottom:360px;
+    width:80px;
+    height: 80px;
+    background-color: rgb(88, 81, 81);
+    border-radius: 50%;
+}
+.bulb::before{
+    content:'';
+    position:absolute;
+    top:-50px;
+    border-top: 30px solid rgb(216, 201, 201);
+    left:22.5px;
+    width:35px;
+    height: 80px;
+    background-color:rgb(88, 81, 81);
+    border-radius: 10px;
+}
+.bulb span:nth-child(1){
+    position: absolute;
+    top:-16px;
+    left: -4px;
+    display: block;
+    width: 30px;
+    height:30px;
+    transform: rotate(342deg);
+    background-color:transparent;
+    border-bottom-right-radius: 40px;
+    box-shadow: 20px 20px 0 10px rgb(88, 81, 81);
+}
+.bulb span:nth-child(2){
+    position: absolute;
+    top:-16px;
+    right: -4px;
+    display: block;
+    width: 30px;
+    height:30px;
+    transform: rotate(17deg);
+    background-color:transparent;
+    border-bottom-left-radius: 40px;
+    box-shadow: -20px 20px 0 10px rgb(88, 81, 81);
+}
+.wire{
+    position: relative;
+    bottom:410px;
+    left:738px;
+    width: 4px;
+    height: 60px;
+    
+    background-color: rgb(216, 201, 201);
+}
+.switch{
+    position: relative;
+    right:800px;
+    bottom:10px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(rgb(30, 170, 123),rgb(30, 170, 123),rgb(30, 170, 123));
+    border: 3px solid black;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.switch .btn1{
+    position:relative;
+    width:25px;
+    height: 40px;
+    border-radius: 6px;
+    background: linear-gradient(#777,#fff,#777);
+    border: 2px solid black;
+    cursor:pointer;
+}
+.switch .btn1::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:85%;
+    background: linear-gradient(#fff,#fff);
+    border-radius: 4px;
+
+}
+.on .switch .btn1::before{
+    top:15%;
+}
